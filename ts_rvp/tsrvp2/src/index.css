@@ -1,4 +1,5 @@
-@tailwindcss base;
-@tailwindcss components;
-@tailwindcss utilities;
+@import "tailwindcss";
 
+.customClass1{
+    background-color: #07062b;
+}

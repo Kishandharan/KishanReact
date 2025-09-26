@@ -1,10 +1,5 @@
 function App() {
-    return (
-        <>
-            <title>WOOOW!</title>
-            <p class="text-9xl bg-blue-900">Hello</p>
-        </>
-    );
+    return <p className="text-9xl customClass1">Hello</p>
 }
 
 export default App
