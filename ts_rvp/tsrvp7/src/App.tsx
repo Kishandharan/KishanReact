@@ -6,15 +6,15 @@ function App() {
 
     useEffect(
         () => {
-            axios.get('192.168.70.104:6888/route1')
-                .then(response => setApiResponse(response.data))
+            axios.get('http://localhost:3000/route1', { headers: { "Content-Type":"application/json" } })
+                .then(response => setApiResponse(response.data.info))
                 .catch(error => console.log("Got an error instead of the data! Lol", error));
         },
     []);
 
     return (
         <>
-            <p>{JSON.stringify(apiResponse)}</p>            
+            <p>{apiResponse}</p>            
         </>
     );
 }
