@@ -1,1 +1,0 @@
-let fastify = require("fastify")();
