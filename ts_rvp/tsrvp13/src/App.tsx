@@ -1,11 +1,8 @@
-import { useState } from 'react';
-import KeyValuePair from './KeyValuePair/KeyValuePair.tsx';
-
 function App(){
-    
-    return <>
-        <KeyValuePair lsKey="sampleKey" lsValue="sampleValue" />
-    </>;
+    return (<>
+            <h1>This is the home page</h1>
+    </>);
 }
+
 
 export default App
