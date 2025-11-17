@@ -5,7 +5,7 @@ function App(){
         <p>This is the home page...</p>
         <ol>
             <li><Link to="/about">About page</Link></li>
-            <li><Link to="/contact">Contact page</Link></li>
+            <li><Link to="/contact/John">Contact page</Link></li>
         </ol>
     </>;
 }
