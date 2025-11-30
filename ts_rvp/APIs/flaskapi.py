@@ -15,16 +15,16 @@ cursor = connection.cursor()
 @app.route("/createdb/<dbname>")
 def route1(dbname):
     cursor.execute(f"create database {dbname}")
-    return "done"
+    return {"status":"done"}
 
 @app.route("/deletedb/<dbname>")
 def route2(dbname):
     cursor.execute(f"drop database {dbname}")
-    return "done"
+    return {"status":"done"}
 
 @app.route("/showdbs")
 def route3():
     cursor.execute(f"show databases")
-    return cursor.fetchall()
+    return {"data":cursor.fetchall()}
 
 app.run(debug=True)
